@@ -2,7 +2,9 @@
     import type { PageServerData } from './$types';
     export let data: PageServerData;
 
-    console.log("PageServerData :: ", data);
+    const { page, status } = data;
+
+    console.log("main PageServerData :: ", page, status);
 </script>
 
-<h1>Welcome to SvelteKit 2</h1>
+<h1>Welcome to SvelteKit</h1>
